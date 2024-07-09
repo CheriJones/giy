@@ -23,7 +23,7 @@
 	$getpass = $_GET["passwords"];
 	$contactid = $_GET["contactid"];
 	
-	$sql = "SELECT * FROM btgwwlogin WHERE passwords = '$getpass'";
+	$sql = "SELECT * FROM btglogin WHERE passwords = '$getpass'";
 	$result = $conn->query($sql);
   		// output data of each row
   		while($row = $result->fetch_assoc()) 
@@ -42,7 +42,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "DELETE FROM contacts WHERE contactid='$contactid'";
+$sql = "DELETE FROM btgcontacts WHERE contactid='$contactid'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully";

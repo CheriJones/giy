@@ -12,7 +12,7 @@
 
 	$userid = $_GET["userid"];
 
-$sql = "SELECT * FROM btgwwlogin WHERE userid = $userid";
+$sql = "SELECT * FROM btglogin WHERE userid = $userid";
 	$result = $conn->query($sql);
 	// output data of each row
 	while($row = $result->fetch_assoc())

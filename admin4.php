@@ -11,7 +11,7 @@
 			  		die("Connection failed: " . $conn->connect_error);
 				}
 	
-				$sql = "SELECT * FROM btgwwlogin WHERE userlevel < 3";
+				$sql = "SELECT * FROM btglogin WHERE userlevel < 3";
 				$result = $conn->query($sql);
 				// output data of each row
 				while($row = $result->fetch_assoc())

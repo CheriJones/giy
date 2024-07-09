@@ -7,6 +7,7 @@
 
 <body>
 <center>
+<br /><br /><br />
 <form action="loginpost.php" method="get" name="login" target="_self">
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -16,7 +17,7 @@
   </tr>
   <tr>
     <td>
-    	<input name="passwords" type="text" />
+    	<input name="passwords" type="password" />
     </td>
   </tr>
   <tr>

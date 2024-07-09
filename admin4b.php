@@ -17,7 +17,7 @@
 	$getpass = $_GET["passwords"];
 	$userid = $_GET["userid"];
 		
-	$sql = "SELECT * FROM btgwwlogin WHERE passwords = '$getpass'";
+	$sql = "SELECT * FROM btglogin WHERE passwords = '$getpass'";
 	$result = $conn->query($sql);
   		// output data of each row
   		while($row = $result->fetch_assoc()) 
@@ -36,7 +36,7 @@ $district = $_GET['district'];
 $newlevel = $_GET['newlevel'];
 
 
-$sql = "UPDATE btgwwlogin
+$sql = "UPDATE btglogin
  		SET usernames = '$newuser',
 		 	passwords = '$newpass',
 		 	district = '$district',

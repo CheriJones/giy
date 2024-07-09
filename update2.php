@@ -10,7 +10,7 @@
 
 	$contactid = $_GET["contactid"];
 	
-$sql = "SELECT * FROM contacts WHERE contactid = $contactid";
+$sql = "SELECT * FROM btgcontacts WHERE contactid = $contactid";
 	$result = $conn->query($sql);
 	// output data of each row
 	while($row = $result->fetch_assoc())

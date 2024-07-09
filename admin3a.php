@@ -17,7 +17,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO btgwwlogin
+$sql = "INSERT INTO btglogin
 (usernames, passwords, userlevel, district) 
 VALUES ('$myuser', '$mypassword', $userlevel, '$district')";
 
